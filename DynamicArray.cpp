@@ -1,3 +1,5 @@
+# problem source(題目網址): https://www.hackerrank.com/challenges/dynamic-array/problem
+
 #include <bits/stdc++.h>
 
 using namespace std;
