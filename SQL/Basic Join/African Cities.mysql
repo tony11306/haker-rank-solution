@@ -1,0 +1,5 @@
+-- problem source: https://www.hackerrank.com/challenges/african-cities/problem
+
+select CITY.NAME
+from CITY, COUNTRY
+where CITY.COUNTRYCODE = COUNTRY.CODE and COUNTRY.CONTINENT = 'Africa';
