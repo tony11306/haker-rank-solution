@@ -1,0 +1,8 @@
+-- problem source: https://www.hackerrank.com/challenges/weather-observation-station-7/problem
+
+/*
+Enter your query here.
+*/
+select distinct(CITY) 
+from STATION
+where substring(CITY, length(CITY), 1) in ('a', 'e', 'i', 'o', 'u');
