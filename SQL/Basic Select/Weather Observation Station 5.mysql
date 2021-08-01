@@ -1,0 +1,8 @@
+-- problem source: https://www.hackerrank.com/challenges/weather-observation-station-5/problem
+/*必須得說 題目看錯弄超久 原來只是要最大跟最小*/
+/*
+Enter your query here.
+*/
+(select CITY, length(CITY) as CityNameLength from STATION order by CityNameLength asc, CITY limit 1)
+union
+(select CITY, length(CITY) as CityNameLength from STATION order by CityNameLength desc, CITY limit 1);
