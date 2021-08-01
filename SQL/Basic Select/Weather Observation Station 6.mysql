@@ -1,0 +1,9 @@
+-- problem source: https://www.hackerrank.com/challenges/weather-observation-station-6/problem
+/*原來.. mysql substring pos 是 1 based 害我他媽搞超久*/
+/*
+Enter your query here.
+*/
+
+select distinct(CITY) 
+from STATION
+where substring(CITY, 1, 1) in ('a', 'e', 'i', 'o', 'u');
