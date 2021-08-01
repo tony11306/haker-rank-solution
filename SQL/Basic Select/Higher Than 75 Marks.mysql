@@ -1,0 +1,10 @@
+-- problem source: https://www.hackerrank.com/challenges/more-than-75-marks/problem
+
+/*
+Enter your query here.
+*/
+select Name 
+from STUDENTS
+where Marks > 75
+order by substring(Name, length(Name)-2, 3) asc, ID asc
+;
